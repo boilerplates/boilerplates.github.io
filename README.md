@@ -1,50 +1,22 @@
-# boilerplates-github-io [![NPM version](https://badge.fury.io/js/boilerplates-github-io.svg)](http://badge.fury.io/js/boilerplates-github-io)
+# boilerplates.github.io [![NPM version](https://badge.fury.io/js/boilerplates.github.io.svg)](http://badge.fury.io/js/boilerplates.github.io)
 
 > boilerplates.io website
 
-## Install
-## Install with [npm](npmjs.org)
-
-```bash
-npm i boilerplates-github-io --save
-```
-
-## Usage
-
-```js
-var boilerplatesGithubIo = require('boilerplates-github-io');
-```
-
-## API
-<!-- add a path or glob pattern for files with code comments to use for docs  -->
-{%= apidocs("index.js") %}
-
-## Related projects
-<!-- add an array of related projects, then un-escape the helper -->
-{%= related([]) %}  
-
-## Running tests
-Install dev dependencies.
-
-```bash
-npm i -d && npm test
-```
-
-
 ## Contributing
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/boilerplates/boilerplates-github-io/issues)
 
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/boilerplates/boilerplates.github.io/issues/new).
 
 ## Author
 
 **Brian Woodward**
- 
-+ [github/boilerplates](https://github.com/boilerplates)
-+ [twitter/boilerplates](http://twitter.com/boilerplates) 
+
++ [github/doowb](https://github.com/doowb)
++ [twitter/doowb](http://twitter.com/doowb)
 
 ## License
+
 Copyright © 2015 Brian Woodward
-Released under the MIT license
+Released under the MIT license.
 
 ***
 
