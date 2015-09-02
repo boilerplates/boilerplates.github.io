@@ -6,7 +6,7 @@ html, body {
     font-weight: normal;
     padding: 0;
     margin: 0;
-    background: #73B4C9;
+    background: #fff;
 }
 
 .good-font {
@@ -67,7 +67,7 @@ html, body {
 .boilerplate-list {
     padding: 20px;
     box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
-    background: #B5E5F5;
+    background: #F7F8F9;
     z-index: 2;
     position: relative;
     margin: 60px auto;
