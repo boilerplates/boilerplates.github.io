@@ -85,4 +85,8 @@ angular.module('npm-boilerplate-browser')
     $scope.orderByKeywords = function (item) {
       return (item === 'boilerplate') ? -1 : 0;
     };
+
+    $scope.filterNames = function (item) {
+      return item.name.indexOf('boilerplate-') !== -1;
+    };
   });
