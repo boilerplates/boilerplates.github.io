@@ -91,7 +91,7 @@ angular.module('npm-boilerplate-browser')
     };
 
     $scope.filterNames = function (item) {
-      return item.name.indexOf('boilerplate-') !== -1;
+      return item.name.indexOf('boilerplate-') === 0;
     };
 
     $scope.excludePreExisting = function (item) {

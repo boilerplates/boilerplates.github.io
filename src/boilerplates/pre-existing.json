@@ -1,6 +1,5 @@
 {
   "boilerplate-gulp": true,
-  "generator-boilerplate-generator": true,
   "boilerplate-gulp-angular": true,
   "boilerplate-sim": true,
   "boilerplate-bootstrap": true,
@@ -9,6 +8,5 @@
   "boilerplate-gulp-js": true,
   "boilerplate-h5bp": true,
   "boilerplate-gif": true,
-  "az-nglib-boilerplate-grunt": true,
   "boilerplate-adigit": true
 }
