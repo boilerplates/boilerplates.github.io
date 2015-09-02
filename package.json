@@ -1,20 +1,14 @@
 {
-  "name": "boilerplates-github-io",
+  "name": "boilerplates.github.io",
   "description": "boilerplates.io website",
   "version": "0.1.0",
-  "homepage": "https://github.com/boilerplates/boilerplates-github-io",
+  "homepage": "https://github.com/boilerplates/boilerplates.github.io",
   "author": "Brian Woodward (https://github.com/doowb)",
-  "repository": "boilerplates/boilerplates-github-io",
+  "repository": "https://github.com/boilerplates/boilerplates.github.io",
   "bugs": {
-    "url": "https://github.com/boilerplates/boilerplates-github-io/issues"
+    "url": "https://github.com/boilerplates/boilerplates.github.io/issues"
   },
   "license": "MIT",
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
   "private": true,
   "devDependencies": {
     "assemble": "assemble/assemble#dev",
