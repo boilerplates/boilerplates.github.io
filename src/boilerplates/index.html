@@ -5,18 +5,22 @@
     <meta name="description" content="Discover boilerplates">
     <meta name="keywords" content="boilerplates,boilerplate,search,">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+
+    <!-- styles -->
     <link rel="stylesheet" href="../css/boilerplates.css">
-    <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
-    <!-- META -->
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,700|Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- open graph -->
     <meta property="og:title" content="boilerplates registry">
     <meta property="og:url" content="http://boilerplates.io/boilerplates">
-    <meta property="og:description" content="Discover boilerplates">
-    <!-- OpenSearch -->
+    <meta property="og:description" content="Discover boilerplates that follow established boilerplate conventions">
+
+    <!-- opensearch -->
     <link rel="search" type="application/opensearchdescription+xml" href="./opensearch.xml" />
   </head>
   <body ng-controller="BoilerplateListCtrl" class="good-font">
     <nav class="fixed-title" role="navigation">
-      <a class="logo" href="/" role="banner">Boilerplates</a>
+      <a class="logo" href="/" role="banner">boilerplates</a>
       <input ng-change="limit=15" type="search" role="search" class="ng-cloak good-font boilerplate-search" placeholder="Search {{ (data | filter:filterNames).length }} boilerplates..." ng-model="search" autofocus>
     </nav>
     <section class="ng-cloak boilerplate-list-container" ng-init="limit=20" infinite-scroll="limit=limit+25" role="main">
