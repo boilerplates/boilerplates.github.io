@@ -59,6 +59,9 @@ angular.module('npm-boilerplate-browser')
 
     var sortResults = function (results) {
       return results.sort(sortBy(
+        function (boilerplate) {
+          return $scope.preExisting[boilerplate.name] ? 1 : 0;
+        },
         // Sort highly-rated boilerplates to top
         function (boilerplate) {
           return -boilerplate.rating;
@@ -70,10 +73,11 @@ angular.module('npm-boilerplate-browser')
       ));
     };
 
-    $q.all([makeRequest(0, initialFetchSize)])
+    $q.all([$http.get('pre-existing.json'), makeRequest(0, initialFetchSize)])
       .then(function (responses) {
-        $scope.data = sortResults(responses[0].data.results);
-        return makeRequest(initialFetchSize, responses[0].data.total);
+        $scope.preExisting = responses[0].data;
+        $scope.data = sortResults(responses[1].data.results);
+        return makeRequest(initialFetchSize, responses[1].data.total);
       })
       .then(function (response) {
         $scope.data = sortResults($scope.data.concat(response.data.results));
@@ -88,5 +92,9 @@ angular.module('npm-boilerplate-browser')
 
     $scope.filterNames = function (item) {
       return item.name.indexOf('boilerplate-') !== -1;
+    };
+
+    $scope.excludePreExisting = function (item) {
+      return (item && !$scope.preExisting[item.name]);
     };
   });

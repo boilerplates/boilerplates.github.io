@@ -21,13 +21,13 @@
   <body ng-controller="BoilerplateListCtrl" class="good-font">
     <nav class="fixed-title" role="navigation">
       <a class="logo" href="/" role="banner">boilerplates</a>
-      <input ng-change="limit=15" type="search" role="search" class="ng-cloak good-font boilerplate-search" placeholder="Search {{ (data | filter:filterNames).length }} boilerplates..." ng-model="search" autofocus>
+      <input ng-change="limit=15" type="search" role="search" class="ng-cloak good-font boilerplate-search" placeholder="Search {{ (data | filter:filterNames | filter:excludePreExisting).length }} boilerplates..." ng-model="search" autofocus>
     </nav>
     <section class="ng-cloak boilerplate-list-container" ng-init="limit=20" infinite-scroll="limit=limit+25" role="main">
       <ul class="boilerplate-list" ng-show="data" role="list">
-        <li class="no-results" ng-hide="(data | filter:search | filter:filterNames).length">No results found</li>
+        <li class="no-results" ng-hide="(data | filter:search | filter:filterNames | filter:excludePreExisting).length">No results found</li>
         <li role="listitem" class="boilerplate"
-          ng-repeat="boilerplate in data | filter:search | filter:filterNames | limitTo:limit track by $index">
+          ng-repeat="boilerplate in data | filter:search | filter:filterNames | filter:excludePreExisting | limitTo:limit track by $index">
           <a ng-href="https://npmjs.org/package/{{boilerplate.name}}/" target="_blank" title="Install" class="title" ng-bind="boilerplate.name"></a>
           <div class="description" ng-bind="boilerplate.description"></div>
           <div class="more-info">
