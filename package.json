@@ -9,16 +9,13 @@
     "url": "https://github.com/boilerplates/boilerplates-github-io/issues"
   },
   "license": "MIT",
-  "files": [
-    "index.js"
-  ],
-  "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
     "test": "mocha"
   },
+  "private": true,
   "devDependencies": {
     "mocha": "*"
   }
