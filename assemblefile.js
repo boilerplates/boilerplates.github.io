@@ -6,7 +6,7 @@ var connect = require('gulp-connect');
 // var reload = require('gulp-livereload');
 
 assemble.task('deploy', function(){
-  return assemble.src('_gh_pages/**/*')
+  return assemble.src('_gh_pages/**/*', {dot: true})
     .pipe(deploy({
       branch: 'test'
     }));
@@ -24,7 +24,7 @@ assemble.task('watch', ['site'], function () {
 });
 
 assemble.task('site', function(){
-  return assemble.copy('src/**/*', '_gh_pages')
+  return assemble.copy('src/**/*', '_gh_pages', {dot: true})
     .pipe(connect.reload());
 });
 
