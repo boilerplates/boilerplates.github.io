@@ -8,7 +8,7 @@ var connect = require('gulp-connect');
 assemble.task('deploy', function(){
   return assemble.src('_gh_pages/**/*')
     .pipe(deploy({
-      branch: 'master'
+      branch: 'test'
     }));
 });
 
