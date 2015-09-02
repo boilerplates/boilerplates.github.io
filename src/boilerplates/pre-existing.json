@@ -2,11 +2,9 @@
   "boilerplate-gulp": true,
   "boilerplate-gulp-angular": true,
   "boilerplate-sim": true,
-  "boilerplate-bootstrap": true,
   "boilerplate-compiler": true,
   "boilerplate-gulp-css": true,
   "boilerplate-gulp-js": true,
-  "boilerplate-h5bp": true,
   "boilerplate-gif": true,
   "boilerplate-adigit": true
 }
